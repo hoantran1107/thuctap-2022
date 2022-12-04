@@ -1,0 +1,11 @@
+- Elasticsreach là 1 search engine, hoạt động như 1 web server, có khả năng tìm kiếm nhanh chóng (near realtime) thông qua giao thức RESTful
+- Kibana là giao diện web để tìm kiếm dữ liệu và trực quan để sử dụng Elasticsearch
+- Serilog là thư viện .Net thứ 3 dùng để tạo Log, Log dùng để ta có thể tra cứu, hiển thị, lưu trữ lại trạng thái của hệ thống trong quá khứ, những code nào đã được chạy, từ đó tìm ra lỗi và fix dễ dàng hơn thay thế ILogger có sẵn
+- Khi dùng cùng với Elasitcsreach sẽ trả ra kết quả chính xác, nhanh chóng
+- 6 mức độ Log trong asp.net core:
+	Trace Tìm biến, hàm cho việc debug
+	Debug Mức này thường dùng khi muốn ghi nhận các biến, dữ liệu đi vào hàm
+	Information Theo dõi luồn dữ liệu các server start/stop
+	Warning Cảnh báo vẫn có thể chạy chương trình nhưng có thể xảy ra lỗi phát sinh sau này -> cần phải kiểm tra
+	Error: Mức này dùng khi ghi nhận lỗi hoặc exception xảy ra trong hệ thống. có thể dừng chạy nhưng không ảnh hưởng tới service hay application
+	Critical: Mức cao nhất. Khi xảy ra lỗi này có tắt service hay application để tránh mất dữ liệu ví dụ: out of disk space
