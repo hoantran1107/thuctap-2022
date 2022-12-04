@@ -5,4 +5,5 @@ Công việc công ty giao
 # ngày 2/12
 - Tìm hiểu về appseting.json, kibana, elasticsreach
 - serilog, các mức độ log trong asp.net
+- Cài đặt kibana, elasticsreach, serilog
 - làm bài tập về các kiến thức trên
