@@ -1,0 +1,25 @@
+Question: Cho 1 số tự nhiên. Hãy tính toán theo format sau:
+Ví dụ: (input => output)
+1. 39 => 3*9 = 27, 2*7 = 14, 1*4 = 4 => return 4
+2. 999 => 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12 => return 2
+3. 5 => return 0
+
+*** Answer:
+int tinhtoan(int so){
+    int n =(int)Math.Floor(Math.Log10(so) + 1);
+    if(n >1){
+        int sum = 1;
+        while (so != 0) {
+        sum *= so % 10;
+        so /= 10;
+        }
+        return sum;
+    }
+    else{
+        return 0;
+    }
+}
+
+---
+Console.WriteLine(tinhtoan(999)); output: 729
+Console.WriteLine(tinhtoan(729)); output: 126

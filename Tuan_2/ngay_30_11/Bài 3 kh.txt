@@ -1,0 +1,40 @@
+*** Question: Kiểm tra trong chuổi 1 có chứa các ký tự của chuổi 2 ko?
+Ví dụ:
+1. s1 = "efcscsado" ,s2 = "code"
+=> return true
+2. s1 = "qewrervxcslfhdsd"
+   s2 = "world"
+return false
+-----------
+string removeDuplicate(string inputString){
+     string resultString = string.Empty;
+            for (int i = 0; i < inputString.Length; i++)
+            {
+                if (!resultString.Contains(inputString[i]))
+                {
+                    resultString += inputString[i];
+                }
+            }
+            return resultString;
+}
+bool ktchuoi(string a, string b){
+    a = removeDuplicate(a);
+    b= removeDuplicate(b);
+    int dem =0;
+    for(int i =0 ;i< b.Length;i++){
+     for(int k=0;k< a.Length;k++){
+        if(b[i]== a[k]){
+           dem += 1; 
+        }
+     }
+    }
+    if(dem == b.Length){
+        return true;
+    }
+    else 
+    return false;
+}
+------------- 
+Console.WriteLine(ktchuoi("efcscsado","code")); : True
+Console.WriteLine(ktchuoi("efcscsado","codecc")); :True
+Console.WriteLine(ktchuoi("qewrervxcslfhdsd","world")); :false

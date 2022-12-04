@@ -1,0 +1,30 @@
+*** NOTE: Các bạn ghi function kết quả vào đây luôn nha
+***Question: Cho 2 số. Hãy viết 1 function để thực hiện các phép tính + - * /
+
+
+*** Answer here:
+static double PhepTinh(double a,double b,string pt){
+    double kq;
+    switch(pt){
+        case "+":
+        kq=a+b;
+        break;
+        case "-":
+        kq=a-b;
+        break;
+        case "*":
+        kq= a*b;
+        break;
+        case "/":
+        kq= a/b;
+        break;
+        default:
+        kq=0;
+        break;
+    }
+    return kq;
+}
+Console.WriteLine(PhepTinh(2,1,"+")); output: 3
+Console.WriteLine(PhepTinh(1,2,"-")); output: -1
+Console.WriteLine(PhepTinh(3,2,"*")); output: 6
+Console.WriteLine(PhepTinh(2,3,"/")); output: 0.6666666666666666

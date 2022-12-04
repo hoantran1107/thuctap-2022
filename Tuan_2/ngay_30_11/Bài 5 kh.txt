@@ -1,0 +1,41 @@
+Question: Cho 1 mảng số nguyên hãy tìm các phần tử xuất hiện lẻ lần trong mảng
+Ví dụ: 
+[7] => return 7
+[1,9,9,1,1,1,5,0,3,5,0,9] =>return [3, 9]
+
+*** Answer
+void timle(int[] a){
+    List<int> listnew = new List<int>();
+    List<int> list = new List<int>();
+    List<int> list1 = new List<int>();
+    foreach(int c in a){
+        if(c % 2==1){
+            list.Add(c);
+        }
+    }
+     for (int i = 0; i < list.Count; i++)
+            {
+                if (!listnew.Contains(list[i]))
+                {
+                    listnew.Add(list[i]);
+                }
+            }
+    foreach(int c in listnew){
+        int dem=0;
+        foreach (int d in list){
+            if(c == d){
+                dem += 1;
+            }
+        }
+        if(dem % 2 ==1){
+            list1.Add(c);
+        }
+    }
+     foreach(int c in list1){
+        Console.Write(c+" ");
+    }
+}
+-----------------
+ int[] array = { 1,9,9,1,1,1,5,0,3,5,0,9 };
+timle(array); : output 3,9
+

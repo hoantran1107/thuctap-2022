@@ -1,0 +1,57 @@
+Question: Cho 1 năm bất kỳ (1 -> 9999). Hãy chuyển năm đó sang ký hiệu la mã
+Biết rằng: 
+I          1
+V          5
+X          10
+L          50
+C          100
+D          500
+M          1,000
+
+Ví dụ: 2022 = MM(2000) + XXII(22) => MMXXII
+
+Answer here:
+void chuyenso(int a){
+List<string> lama = new List<string>();
+    if(a >= 1 && a<=9999){
+    while (a /1000 > 0){
+        lama.Add("M");
+        a -= 1000;
+    }
+   while (a /500 > 0){
+        lama.Add("D");
+        a -= 500;
+    }
+    while (a /100 > 0){
+        lama.Add("C");
+        a -= 100;
+    }
+    while (a /50 > 0){
+        lama.Add("L");
+        a -= 50;
+    }
+    while (a /10 > 0){
+        lama.Add("X");
+        a -= 10;
+    }
+     while (a /5 > 0){
+        lama.Add("V");
+        a -= 5;
+    }
+      
+    while (a /1 > 0){
+        lama.Add("I");
+        a -= 1;
+    }
+    foreach(string x in lama){
+        Console.Write(x);
+    }
+   // if(a)
+   }
+   else {
+    Console.WriteLine("a nam trong khoan tu 1-9999");
+   }
+}
+---
+chuyenso(2022) : MMXXII
+chuyenso(1999) : MDCCCCLXXXXVIIII
