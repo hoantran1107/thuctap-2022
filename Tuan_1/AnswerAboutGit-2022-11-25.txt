@@ -1,0 +1,19 @@
+0. Git: lưu trữ các snapshot của tập tin để sau khi ta có sự thay đổi thì sẽ được lưu lại, nếu không có sự thay đổi thì sẽ không tạo snapshot
+Github nơi lưu trữ dữ liệu trên mạng để nhiều người có thể truy cập
+1. Git fetch:Theo dõi sự thay đổi của dữ liệu trên GitHub so dữ liệu ở máy local
+Git pull lấy dữ liệu về máy local
+2. delecte 1 nhánh git: branch --delete <ten-nhanh-can-xoa>
+3. 
+git checkout brandA
+git commit -m "Fixed the bug x"
+git checkout brandB
+git cherry-pick brandA
+4.
+1. vào setting của profile trên github 
+2. vào developer settings
+3. vào Personal access tokens chọn Tokens (classis)
+4. chọn generate new token -> classic token 
+5. tạo tên cho token 
+6. ngày hết hạn 
+7. chọn các mục về project bạn muốn
+8. grenerate token

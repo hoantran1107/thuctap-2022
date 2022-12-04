@@ -1,0 +1,5 @@
+0. Sự khác biệt giữa Git và GitHub là gì?
+1. Khác biệt giữa git fetch and git pull?
+2. Làm thế nào để Delete 1 nhánh?
+3. Nếu chúng ta có 2 branch: branchA, branchB. Chúng ta fix bug trên branchA, làm thế nào để chỉ commit 1 lần có thể apply cho 2 nhánh? 
+4. Làm để nào để get PersonalAccessToken của Git để Authen?
