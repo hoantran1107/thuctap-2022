@@ -7,3 +7,4 @@ Công việc công ty giao
 # ngày 25/11
 - Giới MiddleWare trong .Net Core, .Net Core life cycle 
 - Trả lời các câu hỏi về Git
+- Làm bài tập về MiddleWare
